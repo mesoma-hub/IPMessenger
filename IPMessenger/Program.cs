@@ -21,7 +21,7 @@ namespace IPMessenger
             {
                 Console.WriteLine("Enter server IP: ");
                 string? ip = Console.ReadLine();
-                TcpClientHandler client = new TcpClientHandler(ip!, 5000);
+                TcpClientHandler client = new TcpClientHandler(ip!, port);
                 client.Start();
             }
         }
